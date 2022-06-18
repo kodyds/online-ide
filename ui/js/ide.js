@@ -18,9 +18,10 @@ function changeLanguage() {
 
 function executeCode() {
   console.log(editor.getSession().getValue());
+  let studentId = $("#id_input").val();
   $("#loading_spinner").addClass("loading");
   $.ajax({
-    url: "https://stem.ee.cuhk.edu.hk/development/firmware/get_ESP_data.php?ID=7",
+    url: `https://stem.ee.cuhk.edu.hk/development/firmware/get_ESP_data.php?ID=${studentId}`,
 
     method: "POST",
 
