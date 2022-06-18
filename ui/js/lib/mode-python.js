@@ -175,10 +175,6 @@ define("ace/mode/python_highlight_rules", [
           regex: "[\\]\\)\\}]",
         },
         {
-          token: ["keyword", "text", "entity.name.function"],
-          regex: "(def|class)(\\s+)(\\w+)",
-        },
-        {
           token: "text",
           regex: "\\s+",
         },
